@@ -8,7 +8,7 @@ let categories = [];
 async function getCategoryIds() {
     const idArr = [];
     for (let i = 0; i < 6; i++) {
-        const id = await axios.get('http://jservice.io/api/random');
+        const id = await axios.get('https://jservice.io/api/random');
         idArr.push(id.data[0].category.id);
     }
     return idArr;
@@ -27,7 +27,7 @@ async function getCategoryIds() {
  */
 
 async function getCategory(catId) {
-    const info = await axios.get(`http://jservice.io/api/category?id=${catId}`);
+    const info = await axios.get(`https://jservice.io/api/category?id=${catId}`);
     const clues = [];
     for (let i = 0; i < 5; i++) {
         const answer = info.data.clues[i].answer;
