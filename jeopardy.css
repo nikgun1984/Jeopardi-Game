@@ -1,0 +1,34 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+body{
+  background-color: rgb(78, 198, 235);
+}
+
+img#logo{
+  width: 30%;
+}
+
+td{
+  height:120px;
+  /* text-align: center; */
+}
+
+
+td.header-cell{
+  height: 90px;
+  background: rgb(81, 81, 243);
+}
+
+.box{
+  background: rgb(17, 17, 170);
+}
+
+table{
+  table-layout: fixed;
+}
