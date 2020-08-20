@@ -128,6 +128,7 @@ function hideLoadingView() {
 async function setupAndStart() {
     showLoadingView();
     $("table").empty();
+    categories = [];
     await fillTable();
     hideLoadingView()
 }
